@@ -1,15 +1,16 @@
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// YouTube embeds: <div class="video" data-youtube="VIDEO_ID">
+// YouTube embeds: <div class="video" data-youtube="VIDEO_ID" data-start="SECONDS">
 document.querySelectorAll(".video").forEach((box) => {
   const id = box.dataset.youtube.trim();
   if (!id) {
     box.innerHTML = `<div class="placeholder">VIDEO: ${box.dataset.label}<br>paste the YouTube ID in data-youtube</div>`;
     return;
   }
+  const start = parseInt(box.dataset.start, 10);
   const iframe = document.createElement("iframe");
-  iframe.src = `https://www.youtube-nocookie.com/embed/${id}`;
+  iframe.src = `https://www.youtube-nocookie.com/embed/${id}` + (start > 0 ? `?start=${start}` : "");
   iframe.title = box.dataset.label || "Video";
   iframe.loading = "lazy";
   iframe.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture";
