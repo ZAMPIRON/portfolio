@@ -20,6 +20,9 @@ Use sempre **.jpg** e nomes **exatamente** como abaixo (minúsculas, com hífen)
 | `images/certificates/python.jpg` | Certificado Python |
 | `images/certificates/sql.jpg` | Certificado SQL |
 | `images/certificates/excel.jpg` | Certificado Excel |
+| `images/childhood/champion.jpg` | Você criança sendo campeão |
+| `images/childhood/music.jpg` | Você criança tocando |
+| `images/music.jpg` | Sua foto tocando hoje (vertical fica melhor) |
 | `images/soccer.jpg` | Sua foto jogando futebol (vertical fica melhor) |
 | `images/community/natal-solidario.jpg` | Natal Solidário |
 | `images/community/jiu-jitsu.jpg` | Jiu-jitsu |
