@@ -53,7 +53,7 @@
       <div class="container">
         <p class="eyebrow">Featured project</p>
         <h2>FrequencyON</h2>
-        <p class="lead">A facial-recognition attendance totem that helps my school fight student dropout.</p>
+        <p class="lead">Attendance that takes itself. A facial-recognition totem that helps schools spot students at risk of dropping out before it's too late.</p>
 
         <!-- Cole o ID do vídeo do YouTube (Não listado) em data-youtube.
              Ex.: https://youtu.be/dQw4w9WgXcQ  ->  data-youtube="dQw4w9WgXcQ" -->
@@ -62,30 +62,34 @@
         <div class="project-grid">
           <div class="project-text">
             <h3>The problem</h3>
-            <p>School dropout often starts with students quietly missing classes. Manual roll calls are slow, and by the time anyone notices a pattern, it can be too late.</p>
+            <p>Manual roll calls waste time in every class, and paper lists rarely turn into information. By the time a school notices a student has stopped coming, they have often already dropped out.</p>
 
             <h3>What I built</h3>
-            <p>A totem at the school entrance that recognizes students' faces, records attendance automatically, and shows the school staff who is starting to miss classes so they can act early.</p>
+            <p>Students walk past a tablet at the school entrance and their attendance is recorded automatically: no badges, no lists, no lines. A liveness check rejects printed photos. Every record feeds dashboards for teachers and coordinators that flag students below 75% attendance and send them email alerts, so the school can act early.</p>
 
             <h3>Technologies</h3>
             <ul class="tags">
               <li>Python</li>
+              <li>Flask</li>
               <li>OpenCV</li>
-              <li>Facial recognition</li>
-              <li>SQL</li>
+              <li>face_recognition (dlib)</li>
+              <li>SQLite / SQLAlchemy</li>
+              <li>JavaScript</li>
+              <li>Chart.js</li>
             </ul>
 
             <h3>My role</h3>
-            <p><strong>Lead Developer</strong>: I designed the system architecture, built the recognition pipeline, and led the development team.</p>
+            <p><strong>Lead Developer</strong>: I built the system end to end, from the facial-recognition service to the totem app and the teacher, student and admin dashboards. Faces are stored as numeric vectors and processed on the school's own server, with no images sent to third parties.</p>
 
-            <!-- Troque o href pelo link do repositório. Se não puder deixar público, apague esta linha. -->
-            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View code on GitHub</a>
+            <a href="https://github.com/ZAMPIRON/tcc-frequencyon" class="btn btn-primary" target="_blank" rel="noopener">View code on GitHub</a>
           </div>
 
           <div class="gallery gallery-2">
-            <img src="images/frequencyon/totem.jpg" alt="The FrequencyON totem installed at the school">
-            <img src="images/frequencyon/screen-1.jpg" alt="FrequencyON system screen">
-            <img src="images/frequencyon/screen-2.jpg" alt="FrequencyON attendance dashboard">
+            <img src="images/frequencyon/screen-1.jpg" alt="FrequencyON totem screen confirming a student's attendance">
+            <img src="images/frequencyon/screen-2.jpg" alt="List of students at risk of dropping out">
+            <img src="images/frequencyon/screen-3.jpg" alt="FrequencyON admin dashboard">
+            <!-- Foto do totem de verdade: salve em images/frequencyon/totem.jpg e descomente a linha abaixo.
+            <img src="images/frequencyon/totem.jpg" alt="The FrequencyON totem installed at the school"> -->
           </div>
         </div>
       </div>
@@ -96,22 +100,20 @@
       <div class="container">
         <p class="eyebrow">CS50x final project</p>
         <h2>Buddy Matcher</h2>
-        <p class="lead">A web app that pairs students with compatible buddies based on their interests.</p>
+        <p class="lead">A web app that helps students in online courses like CS50 find partners for their projects. Some have an idea but lack the skills; others want to code but have no idea yet. Buddy Matcher connects them by timezone, GitHub profile and project pitch.</p>
 
-        <div class="gallery gallery-2">
-          <img src="images/buddy-matcher/screenshot-1.jpg" alt="Buddy Matcher screenshot 1">
-          <img src="images/buddy-matcher/screenshot-2.jpg" alt="Buddy Matcher screenshot 2">
-        </div>
+        <div class="video" data-youtube="h35dPXggnao" data-label="Buddy Matcher demo"></div>
 
         <div class="project-footer">
           <ul class="tags">
             <li>Python</li>
             <li>Flask</li>
-            <li>SQL</li>
-            <li>HTML/CSS</li>
+            <li>SQLite</li>
+            <li>Jinja</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
           </ul>
-          <!-- Troque o href pelo link do repositório. -->
-          <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View code on GitHub</a>
+          <a href="https://github.com/ZAMPIRON/myproject" class="btn btn-primary" target="_blank" rel="noopener">View code on GitHub</a>
         </div>
 
         <div class="cert-feature">
@@ -130,16 +132,20 @@
         <h2>Certificates</h2>
         <div class="cert-grid">
           <figure class="cert">
-            <img src="images/certificates/python.jpg" alt="Python certificate">
-            <figcaption>Python</figcaption>
+            <img src="images/certificates/python.jpg" alt="Python programming certificate">
+            <figcaption>Python Programming<small>Prime Cursos · 50 h · 2024</small></figcaption>
           </figure>
           <figure class="cert">
             <img src="images/certificates/sql.jpg" alt="SQL certificate">
-            <figcaption>SQL</figcaption>
+            <figcaption>SQL<small>Prime Cursos · 35 h · 2024</small></figcaption>
           </figure>
           <figure class="cert">
-            <img src="images/certificates/excel.jpg" alt="Excel certificate">
-            <figcaption>Excel</figcaption>
+            <img src="images/certificates/excel.jpg" alt="Excel and VBA certificate">
+            <figcaption>Excel: Basic to Advanced + VBA<small>Prime Cursos · 30 h · 2024</small></figcaption>
+          </figure>
+          <figure class="cert">
+            <img src="images/certificates/mysql.jpg" alt="Introduction to MySQL certificate">
+            <figcaption>Introduction to MySQL<small>Alfahelix · 2023</small></figcaption>
           </figure>
           <!-- Para mais cursos online, copie um bloco <figure> acima e troque o nome do arquivo e o texto.
                Ex.: images/certificates/course-1.jpg -->
@@ -158,7 +164,7 @@
             <img src="images/childhood/champion.jpg" alt="Gustavo as a kid holding a soccer trophy">
             <figcaption>
               <strong>My first championship</strong>
-              <span>Winning on the field from an early age.</span>
+              <span>Champion of the 20th Copa Fabio Greco (2018).</span>
             </figcaption>
           </figure>
           <figure class="card">
@@ -176,7 +182,7 @@
     <section id="music" class="section section-alt">
       <div class="container">
         <div class="split split-reverse">
-          <img class="split-photo" src="images/music.jpg" alt="Gustavo playing percussion">
+          <img class="split-photo" src="images/music.jpg" alt="Gustavo playing mallet percussion in a concert">
           <div>
             <p class="eyebrow">Percussion</p>
             <h2>Music</h2>
