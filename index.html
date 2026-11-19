@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavo Zampiron — Portfolio</title>
+  <meta name="description" content="Aspiring Computer Science student from Brazil. I build technology that solves real problems in my community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo">GZ</a>
+      <ul class="nav-links">
+        <li><a href="#frequencyon">FrequencyON</a></li>
+        <li><a href="#buddy-matcher">Buddy Matcher</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" class="hero">
+    <div class="container hero-inner">
+      <img class="hero-photo" src="images/profile.jpg" alt="Photo of Gustavo Zampiron">
+      <div>
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Gustavo Zampiron</h1>
+        <p class="hero-tagline">
+          Aspiring Computer Science student from Brazil.
+          I build technology that solves real problems in my community.
+        </p>
+        <div class="hero-actions">
+          <a href="#frequencyon" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Contact me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ FREQUENCYON ============ -->
+    <section id="frequencyon" class="section section-featured">
+      <div class="container">
+        <p class="eyebrow">Featured project</p>
+        <h2>FrequencyON</h2>
+        <p class="lead">A facial-recognition attendance totem that helps my school fight student dropout.</p>
+
+        <!-- Cole o ID do vídeo do YouTube (Não listado) em data-youtube.
+             Ex.: https://youtu.be/dQw4w9WgXcQ  ->  data-youtube="dQw4w9WgXcQ" -->
+        <div class="video" data-youtube="" data-label="FrequencyON demo (1–2 min)"></div>
+
+        <div class="project-grid">
+          <div class="project-text">
+            <h3>The problem</h3>
+            <p>School dropout often starts with students quietly missing classes. Manual roll calls are slow, and by the time anyone notices a pattern, it can be too late.</p>
+
+            <h3>What I built</h3>
+            <p>A totem at the school entrance that recognizes students' faces, records attendance automatically, and shows the school staff who is starting to miss classes so they can act early.</p>
+
+            <h3>Technologies</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>OpenCV</li>
+              <li>Facial recognition</li>
+              <li>SQL</li>
+            </ul>
+
+            <h3>My role</h3>
+            <p><strong>Lead Developer</strong>: I designed the system architecture, built the recognition pipeline, and led the development team.</p>
+
+            <!-- Troque o href pelo link do repositório. Se não puder deixar público, apague esta linha. -->
+            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View code on GitHub</a>
+          </div>
+
+          <div class="gallery gallery-2">
+            <img src="images/frequencyon/totem.jpg" alt="The FrequencyON totem installed at the school">
+            <img src="images/frequencyon/screen-1.jpg" alt="FrequencyON system screen">
+            <img src="images/frequencyon/screen-2.jpg" alt="FrequencyON attendance dashboard">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUDDY MATCHER ============ -->
+    <section id="buddy-matcher" class="section">
+      <div class="container">
+        <p class="eyebrow">CS50x final project</p>
+        <h2>Buddy Matcher</h2>
+        <p class="lead">A web app that pairs students with compatible buddies based on their interests.</p>
+
+        <div class="gallery gallery-2">
+          <img src="images/buddy-matcher/screenshot-1.jpg" alt="Buddy Matcher screenshot 1">
+          <img src="images/buddy-matcher/screenshot-2.jpg" alt="Buddy Matcher screenshot 2">
+        </div>
+
+        <div class="project-footer">
+          <ul class="tags">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <!-- Troque o href pelo link do repositório. -->
+          <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View code on GitHub</a>
+        </div>
+
+        <div class="cert-feature">
+          <img src="images/certificates/cs50.jpg" alt="CS50x certificate from Harvard University">
+          <div>
+            <h3>CS50x: Introduction to Computer Science</h3>
+            <p>Harvard University, via edX</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section id="certificates" class="section section-alt">
+      <div class="container">
+        <h2>Certificates</h2>
+        <div class="cert-grid">
+          <figure class="cert">
+            <img src="images/certificates/python.jpg" alt="Python certificate">
+            <figcaption>Python</figcaption>
+          </figure>
+          <figure class="cert">
+            <img src="images/certificates/sql.jpg" alt="SQL certificate">
+            <figcaption>SQL</figcaption>
+          </figure>
+          <figure class="cert">
+            <img src="images/certificates/excel.jpg" alt="Excel certificate">
+            <figcaption>Excel</figcaption>
+          </figure>
+          <!-- Para mais cursos online, copie um bloco <figure> acima e troque o nome do arquivo e o texto.
+               Ex.: images/certificates/course-1.jpg -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MUSIC ============ -->
+    <section id="music" class="section">
+      <div class="container">
+        <h2>Music</h2>
+        <p class="lead">Percussionist in youth orchestras (Projeto Guri and OFAJ).</p>
+
+        <!-- Cole o ID do vídeo do YouTube (Não listado) em data-youtube. -->
+        <div class="video" data-youtube="" data-label="Percussion performance with the orchestra"></div>
+
+        <!-- Se não tiver o arranjo, apague este bloco. -->
+        <a class="doc-link" href="docs/arrangement.pdf" target="_blank" rel="noopener">
+          <span class="doc-icon" aria-hidden="true">♪</span>
+          <span>
+            <strong>My audition arrangement</strong>
+            <small>Score (PDF)</small>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ COMMUNITY & SPORTS ============ -->
+    <!-- Atenção: não mostre o rosto nem o nome de outros alunos sem permissão. -->
+    <section id="community" class="section section-alt">
+      <div class="container">
+        <h2>Community &amp; Sports</h2>
+        <div class="card-grid">
+          <figure class="card">
+            <img src="images/community/natal-solidario.jpg" alt="Natal Solidário charity event">
+            <figcaption>
+              <strong>Natal Solidário</strong>
+              <span>Christmas charity drive for families in my community.</span>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/community/football.jpg" alt="Football team celebrating the championship">
+            <figcaption>
+              <strong>Football</strong>
+              <span>Champion and top scorer.</span>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/community/jiu-jitsu.jpg" alt="Jiu-jitsu training">
+            <figcaption>
+              <strong>Jiu-jitsu</strong>
+              <span>Discipline on and off the mat.</span>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/community/tennis.jpg" alt="Playing tennis">
+            <figcaption>
+              <strong>Tennis</strong>
+              <span>Focus and consistency.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2>Let's talk</h2>
+        <p class="lead">I'd love to hear from you.</p>
+        <!-- Troque SEU-EMAIL@exemplo.com pelo seu e-mail (nos dois lugares). -->
+        <a class="btn btn-primary btn-lg" href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gustavo Zampiron</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img alt="">
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
